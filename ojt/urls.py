@@ -19,6 +19,6 @@ from task.views import StudentList, StudentDetail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/std_details', StudentList.as_view()),
-    path('api/std_details/<int:pk>', StudentDetail.as_view()),
+    path('api/students', StudentList.as_view()),
+    path('api/students/<int:pk>', StudentDetail.as_view()),
 ]
